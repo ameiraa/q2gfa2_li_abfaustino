@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Outfit:wght@100;300&family=Quicksand&family=Rambla&family=Signika&family=Skranji&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Rambla;   
+    box-sizing: border-box;
+}
+
+div{
+    display: block;
+}
+
+#stars{
+    background:linear-gradient(to bottom right,#07000f,#09011a,#0e0125,#1e0235 ,#01062e,#080229,#080124);
+    min-height: 100vh;
+    height: inherit;
+    overflow: hidden;
+}
+
+nav{
+    z-index: 2;
+    background-color: #00000070;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+nav span {
+    color: white;
+}
+
+h1{
+    position: relative;
+    z-index: 1;
+    top: 51vh;    
+    font-size: 20pt;
+    font-weight: 750;
+    color: white;
+    text-shadow: rgb(23, 18, 31) 2px 2px;
+    text-align: center;
+}
+
+.planets{
+    position: relative;
+    z-index: 0;    
+    display: inline-block;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+#jungle{
+    background-image: url(../media/jungle.gif);
+    height: 130px;
+    width: 130px;
+    animation: junglemotion 300s infinite;
+}
+
+#earth{
+    background-image: url(../media/earth.gif);
+    height: 125px;
+    width: 125px;
+    animation: earthmotion 180s infinite;
+}
+
+#homeworld{
+    background-image: url(../media/homeworld.gif);
+    height: 500px;
+    width: 500px;
+    animation: homeworldmotion 240s infinite;
+    top: -17vh;
+    right: -20vw;
+}
+
+#tunigihollow{
+    background-image: url(../media/tunigihollow.gif);
+    height: 200px;
+    width: 200px;
+    bottom: -7vh;
+    right: -28vw;
+    animation: tunigihollow 60s infinite;
+}
+
+@keyframes homeworldmotion{
+    0%{transform: rotate(20deg);}
+    25%{transform: rotate(-20deg);}
+    50%{transform: rotate(20deg);}
+    75%{transform: rotate(-20deg);}
+    100%{transform: rotate(20deg);}
+}
+
+@keyframes tunigihollowmotion{
+    0%{transform: skew(5deg, 20deg) scale(1.5,1.5);}
+    25%{transform: skew(10deg, 40deg) scale(0.5,0.5);}
+    50%{transform: skew(-5deg, -20deg) scale(1.5,1.5);}
+    75%{transform: skew(-2.5deg,-10deg) scale(0.5,0.5);}
+    100%{transform: skew(-2.5deg,-10deg) scale(1.5,1.5);}
+}
+
+@keyframes earthmotion{
+    0%{transform: translate(-75px,150px);}
+    20%{transform: translate(150px,-50px);}
+    40%{transform: translate(250px,-150px);}
+    60%{transform: translate(325px,-250px);}
+    80%{transform: translate(375px,-350px);}
+    100%{transform: translate(350px,-750px);}
+}
+
+@keyframes junglemotion{
+    0%{transform: translate(-125px,150px);}
+    20%{transform: translate(20px,-150px);}
+    60%{transform: translate(50px,-300px);}
+    80%{transform: translate(75px,-350px);}
+    100%{transform: translate(150px,-600px);}
+}
