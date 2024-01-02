@@ -5,6 +5,7 @@
     padding: 0;
     font-family: Rambla;   
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 div{
@@ -15,7 +16,6 @@ div{
     background:linear-gradient(to bottom right,#07000f,#09011a,#0e0125,#1e0235 ,#01062e,#080229,#080124);
     min-height: 100vh;
     height: inherit;
-    overflow: hidden;
 }
 
 nav{
